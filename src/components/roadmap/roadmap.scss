@@ -1,0 +1,85 @@
+@import "../../assets/scss/mixin.scss";
+
+
+
+.roadmap {
+    max-width: 255px;
+    width: 100%;
+    padding: 19px 24px 24px 24px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.roadmap__view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.roadmap__view-heading {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+    color: #3A4374;
+
+}
+.roadmap__view-link {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #4661E6;
+}
+.roadmap__list {
+    @include list-unstyled;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.roadmap__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.roadmap__item-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.roadmap__item-box {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.roadmap__item-box--orange {
+    background: #F49F85;
+}
+.roadmap__item-box--pink {
+    background: #AD1FEA;
+}
+.roadmap__item-box--green {
+    background: #62BCFA;
+}
+.roadmap__item-box--yellow {
+    background-color: #ffff00;
+}
+.roadmap__item-desc {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #647196;
+}
+.roadmap__item-count {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #647196;
+}

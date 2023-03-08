@@ -1,0 +1,150 @@
+.h1 {
+    font-size: 40px;
+    font-style: italic;
+    text-transform: capitalize;
+    color: red;
+}
+.post-feed {
+    margin: 0px auto 187px auto;
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.detail__wrapper {
+    max-width: 730px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F2F2F2;
+    box-sizing: border-box;
+}
+.feed-go {
+    margin: 80px 0 24px 0;
+    padding: 0;
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.go__back{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #647196;
+}
+.go__back-img{
+    display: block;
+}
+.feed-wrapp {
+    position: relative;
+    margin-top: 40px;
+    padding: 52px 0 40px 0;
+    max-width: 540px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+.feed__plus{
+    position: absolute;
+    top: -28px;
+    left: 42px;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: radial-gradient(128.88% 128.88% at 103.9% -10.39%, #E84D70 0%, #A337F6 53.09%, #28A7ED 100%)
+}
+.feed__plus-img {
+    display: block;
+}
+.feed__heading {
+    max-width: 456px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: -0.333333px;
+    color: #3A4374;
+}
+.feed__form{
+    margin-top: 40px;
+    max-width: 456px;
+    width: 100%;
+}
+.feed__label{
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.194444px;
+    color: #3A4374;
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+.feed__label-text{
+    margin: 2px 0 16px 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #647196;
+}
+.feed__input{
+    margin: 0;
+    padding: 13px 24px;
+    max-width: 456px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background: #F7F8FD;
+    border-radius: 5px;
+}
+.feed__label-select{
+    margin: 0;
+    padding: 13px 24px;
+    max-width: 456px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background: #F7F8FD;
+    border-radius: 5px;
+}
+.feed__option{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #3A4374;
+}
+.feed__label-textarea{
+    max-width: 456px;
+    width: 100%;
+    border: none;
+    box-sizing: border-box;
+    background: #F7F8FD;
+    border-radius: 5px;
+}
+.feed__form-btns {
+    margin-top: 32px;
+    max-width: 456px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+}
