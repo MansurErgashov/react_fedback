@@ -4,34 +4,38 @@ import NavItem from "../navItem/navItem.component"
 import './nav.styled'
 import "./nav.scss"
 import { Navigation, NavigationList } from "./nav.styled";
+import { useSelector } from "react-redux";
 
 function Nav() {
-    const categoryArr = [
-        {
-            id: 1,
-            category: "all"
-        },
-        {
-            id: 2,
-            category:"UI"
-        },
-        {
-            id: 3,
-            category:"UX"
-        },
-        {
-            id: 4,
-            category:"enhancement"
-        },
-        {
-            id: 5,
-            category:"bug"
-        },
-        {
-            id: 6,
-            category:"feature"
-        },
-    ]
+
+    const categoryArr = useSelector(state => state.navigate.navigate)
+    // const categoryArr = [
+    //     {
+    //         id: 1,
+    //         category: "all"
+    //     },
+    //     {
+    //         id: 2,
+    //         category:"UI"
+    //     },
+    //     {
+    //         id: 3,
+    //         category:"UX"
+    //     },
+    //     {
+    //         id: 4,
+    //         category:"enhancement"
+    //     },
+    //     {
+    //         id: 5,
+    //         category:"bug"
+    //     },
+    //     {
+    //         id: 6,
+    //         category:"feature"
+    //     },
+    // ]
+
     return (
         <Navigation>
             <NavigationList>

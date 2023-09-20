@@ -3,12 +3,15 @@ import plusImg from "../../assets/img/plus.png"
 import Feedbtn from "../../components/feedbtn/feedbtn"
 import { Link, useNavigate } from "react-router-dom"
 import goBack from "../../assets/img/back-icon.svg"
+import { TodosContext } from "../../App"
+import { useContext } from "react"
 // import { useRef } from "react"
 // import { useEffect } from "react"
 // import { Navigate } from "react-router-dom"
 
 
 const AddFeed = ({count, setCount}) => {
+    const {setTodos} = useContext(TodosContext)
 
     // const form = useRef(null)
     const navigate = useNavigate()
@@ -30,7 +33,7 @@ const AddFeed = ({count, setCount}) => {
                 },
                 body: JSON.stringify(formDataObj)
             })
-            setCount((todos) => [...todos, formDataObj])
+            setTodos((todos) => [...todos, formDataObj])
             e.target.reset();
             navigate("/")
 

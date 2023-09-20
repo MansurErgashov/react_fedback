@@ -10,7 +10,7 @@ import { useContext } from "react"
 import { TodosContext } from "../../App"
 
 
-const SinglePage = ({setCount}) => {
+const SinglePage = ({count,setCount}) => {
     const {todos, setTodos} = useContext(TodosContext)
     const param = useParams()
     // prop.setParamId(param.id)
@@ -53,10 +53,10 @@ const SinglePage = ({setCount}) => {
                             )}
                         </ul>
                     </div>
-                    <AddComment param = {param} current= {current} setCount = {setCount}/>
+                    <AddComment count={count} param = {param} current= {current} setCount = {setCount}/>
                     </div>
                 ):(
-                    <AddComment param = {param} current= {current} setCount = {setCount}/>
+                    <AddComment count={count} param = {param} current= {current} setCount = {setCount}/>
                 )
             }
         </div>

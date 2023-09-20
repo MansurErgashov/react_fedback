@@ -2,7 +2,7 @@ import "./editFeed.scss"
 import Edit from "../../assets/img/edit.png"
 import Feedbtn from "../../components/feedbtn/feedbtn"
 import goBack from "../../assets/img/back-icon.svg"
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { useContext } from "react"
 import { TodosContext } from "../../App"
 // import Header from "../../components/header/header"
@@ -11,15 +11,8 @@ const EditFeed = () => {
     const {todos, setTodos} = useContext(TodosContext)
     
     const paramId = useParams();
-    const editNavigate = useNavigate()
 
     const current = todos.find(todo => todo.id == paramId.id)
-    console.log(current.id);
-
-    const handleEdit = (e) => {
-        e.preventDefault();
-        editNavigate("/")
-    }
 
     return (
         <div className="edit-wrapper">
@@ -34,7 +27,7 @@ const EditFeed = () => {
                 <img className="edit__img" src={Edit} alt={"edit-img"} width={23} height={24}/>
             </div>
             <h2 className="edit__heading">Editing ‘Add a dark theme option’</h2>
-            <form className="edit__form" onSubmit={handleEdit}>
+            <form className="edit__form" >
 
                 <label className="edit__form-label">
                     Feedback Title

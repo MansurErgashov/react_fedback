@@ -1,9 +1,13 @@
 import "./addComment.scss"
 import Feedbtn from "../../components/feedbtn/feedbtn"
+import { useContext } from "react"
+import { TodosContext } from "../../App"
 // import { useParams } from "react-router-dom"
 
-const AddComment = ({param, current, setCount}) => {
+const AddComment = ({param, current, count, setCount}) => {
 
+    const {setTodos} = useContext(TodosContext)
+    
     const commentAdd = (e) => {
         e.preventDefault();
         const date = new Date();
@@ -27,9 +31,8 @@ const AddComment = ({param, current, setCount}) => {
             })
 
         })
-        setCount((todos) => [...todos, addFormObj])
         e.target.reset();
-        console.log(addFormObj);
+        setTodos((todos) => [...todos, addFormObj])
     }
     return (
         <>
